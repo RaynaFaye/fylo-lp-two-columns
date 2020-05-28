@@ -59,20 +59,24 @@ body {
 /* Main content Sections */
 .section {
   display: flex;
+  column-gap: 30px;
   padding: 0 100px;
 }
 .section__text-block {
-  flex: 1 1 0;
+  flex: 1.1 1 0;
 }
 .section__illustration-img-block {
   flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section__illustration-img {
   width: 100%;
 }
 /* First section */
 .first-section {
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 .first-section__form {
   display: flex;
@@ -83,6 +87,64 @@ body {
 }
 .first-section__form__button {
   width: 30%;
+}
+/* Second section */
+.curve {
+  height: 114px;
+  background: url(../images/bg-curve-desktop.svg);
+}
+.second-section {
+  background: hsl(240, 75%, 98%);
+  font-size: 16px;
+}
+.second-section__paragraph {
+  margin-right: 75px;
+}
+.second-section__link {
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+  /* text-underline-offset not yet well suported to get the uinderline offset correct: so using border */
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  padding-bottom: 5px;
+}
+.second-section__link__icon {
+  vertical-align: middle;
+}
+.second-section__testimonial {
+  background: #ffffff;
+  margin: 50px 0 100px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px hsl(0, 0%, 75%);
+  padding: 20px 30px;
+  letter-spacing: 0.03em;
+}
+.second-section__blockquote {
+  margin: 0;
+}
+.second-section__testimonial__author {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+.second-section__testimonial__avatar {
+  border-radius: 50%;
+  width: 10%;
+}
+.second-section__testimonial__name-block {
+  display: flex;
+  flex-direction: column;
+}
+.second-section__testimonial__author-name {
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+.second-section__testimonial__author-job {
+  font-size: 11px;
+  letter-spacing: normal;
 }
 /* Attribution Section */
 .attribution {
@@ -104,12 +166,20 @@ body {
   .header__menu__item {
     margin-right: 50px;
   }
+  /* Section */
+  .section__illustration-img-block {
+    align-items: flex-start;
+  }
   /* First section */
-  .first-section__title {
+  .title {
     font-size: 26px;
   }
   .first-section__form__button {
     width: 40%;
+  }
+  /* Second section */
+  .second-section__testimonial {
+    width: 100%;
   }
 }
 @media all and (max-width: 740px) {
@@ -132,23 +202,56 @@ body {
     padding: 0 15px;
   }
   .section__illustration-img-block {
-    display: flex;
-    justify-content: center;
     margin-bottom: 50px;
   }
   .section__illustration-img {
     width: 90%;
   }
   /* First section */
+  .first-section {
+    margin-bottom: 100px;
+  }
   .first-section__form {
     row-gap: 20px;
     flex-direction: column;
   }
   .first-section__form__email-input {
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
+    align-self: center;
   }
   .first-section__form__button {
-    width: 100%;
+    width: 90%;
+    align-self: center;
+  }
+  /* Second section */
+  .curve {
+    height: 53px;
+    background: url(../images/bg-curve-mobile.svg);
+  }
+  .second-section {
+    padding-top: 50px;
+  }
+  .second-section__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .second-section__paragraph {
+    margin-right: 0px;
+    text-align: left;
+  }
+  .second-section__paragraph:nth-child(2n + 1) {
+    margin-bottom: 30px;
+  }
+  .second-section__link {
+    font-size: 14px;
+  }
+  .second-section__testimonial {
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+  .second-section__testimonial__author-job {
+    font-size: 10px;
   }
 }
