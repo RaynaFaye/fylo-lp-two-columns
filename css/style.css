@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: hsl(243, 87%, 12%);
+  margin: 0;
+}
+/* .title {
+  font-family: 'Raleway', sans-serif;
+}
+.button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  background: hsl(224, 93%, 58%);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  cursor: pointer;
+} */
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 100px 100px;
+}
+.header__logo {
+  align-self: center;
+}
+.header__menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.header__menu__item {
+  margin-right: 100px;
+}
+.header__menu__link {
+  color: hsl(243, 87%, 12%);
+  text-decoration: none;
+}
 /* Attribution Section */
 .attribution {
   font-size: 11px;
@@ -7,4 +47,25 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+/* Media queries */
+@media all and (max-width: 900px) {
+  .header {
+    margin: 50px 0 100px 50px;
+  }
+  .header__menu__item {
+    margin-right: 50px;
+  }
+}
+@media all and (max-width: 740px) {
+  /* Header Section */
+  .header {
+    margin: 50px 0 100px 20px;
+  }
+  .header__logo {
+    width: 25%;
+  }
+  .header__menu__item {
+    margin-right: 20px;
+  }
 }
