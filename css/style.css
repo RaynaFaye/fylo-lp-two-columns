@@ -3,11 +3,19 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  font-size: 18px;
   color: hsl(243, 87%, 12%);
   margin: 0;
 }
-/* .title {
+.title {
   font-family: 'Raleway', sans-serif;
+  font-size: 38px;
+}
+.input {
+  font-family: 'Raleway', sans-serif;
+  border-radius: 5px;
+  border: 1px solid hsl(243, 87%, 12%);
+  padding: 15px 20px;
 }
 .button {
   font-family: 'Raleway', sans-serif;
@@ -18,7 +26,15 @@ body {
   border-radius: 5px;
   padding: 15px 20px;
   cursor: pointer;
-} */
+}
+.screen-reader {
+  position: absolute;
+  left: -100vw;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 /* Header Section */
 .header {
   display: flex;
@@ -40,6 +56,34 @@ body {
   color: hsl(243, 87%, 12%);
   text-decoration: none;
 }
+/* Main content Sections */
+.section {
+  display: flex;
+  padding: 0 100px;
+}
+.section__text-block {
+  flex: 1 1 0;
+}
+.section__illustration-img-block {
+  flex: 1 1 0;
+}
+.section__illustration-img {
+  width: 100%;
+}
+/* First section */
+.first-section {
+  margin-bottom: 200px;
+}
+.first-section__form {
+  display: flex;
+  column-gap: 20px;
+}
+.first-section__form__email-input {
+  width: 40%;
+}
+.first-section__form__button {
+  width: 30%;
+}
 /* Attribution Section */
 .attribution {
   font-size: 11px;
@@ -49,15 +93,29 @@ body {
   color: hsl(228, 45%, 44%);
 }
 /* Media queries */
-@media all and (max-width: 900px) {
+@media all and (max-width: 980px) {
+  body {
+    font-size: 16px;
+  }
+  /* Header Section */
   .header {
     margin: 50px 0 100px 50px;
   }
   .header__menu__item {
     margin-right: 50px;
   }
+  /* First section */
+  .first-section__title {
+    font-size: 26px;
+  }
+  .first-section__form__button {
+    width: 40%;
+  }
 }
 @media all and (max-width: 740px) {
+  body {
+    text-align: center;
+  }
   /* Header Section */
   .header {
     margin: 50px 0 100px 20px;
@@ -67,5 +125,30 @@ body {
   }
   .header__menu__item {
     margin-right: 20px;
+  }
+  /* Main content Sections */
+  .section {
+    flex-direction: column-reverse;
+    padding: 0 15px;
+  }
+  .section__illustration-img-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .section__illustration-img {
+    width: 90%;
+  }
+  /* First section */
+  .first-section__form {
+    row-gap: 20px;
+    flex-direction: column;
+  }
+  .first-section__form__email-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .first-section__form__button {
+    width: 100%;
   }
 }

@@ -10,6 +10,7 @@
 
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
+
   <body>
     <header class="header">
       <img src="images/logo.svg" alt="Fylo" class="header__logo" />
@@ -21,53 +22,59 @@
         </ul>
       </nav>
     </header>
-    <section>
-      <h1>All your files in one secure location, accessible anywhere.</h1>
-      <p>
-        Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and
-        co-workers.
-      </p>
-      <form action="">
-        <label for="emailTop">Email Address</label>
-        <input type="text" id="emailTop" name="emailTop" placeholder="Enter your email..." />
-        <input type="submit" value="Get Started" />
-      </form>
-      <div>
-        <img src="images/illustration-1.svg" alt="" />
+    <section class="section first-section">
+      <div class="section__text-block">
+        <h1 class="title first-section__title">All your files in one secure location, accessible anywhere.</h1>
+        <p>
+          Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and
+          co-workers.
+        </p>
+        <form action="" class="first-section__form">
+          <label for="emailTop" class="screen-reader">Email Address</label>
+          <input type="text" id="emailTop" name="emailTop" placeholder="Enter your email..." class="input first-section__form__email-input" />
+          <input type="submit" value="Get Started" class="button first-section__form__button" />
+        </form>
+      </div>
+      <div class="section__illustration-img-block">
+        <img src="images/illustration-1.svg" alt="" class="section__illustration-img" />
       </div>
     </section>
-    <section>
-      <h1>Stay productive, wherever you are</h1>
-      <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-      <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
-      <a href="">See how Fylo works <img src="images/icon-arrow.svg" alt="" /></a>
-      <figure>
-        <blockquote>
-          <img src="images/icon-quotes.svg" alt="" />
-          <p>
-            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration
-            machine.
-          </p>
-        </blockquote>
-        <div>
-          <img src="images/avatar-testimonial.jpg" alt="" />
-          <figcaption><span>Kyle Burton</span> <span>Founder & CEO, Huddle</span></figcaption>
-        </div>
-      </figure>
-      <div>
-        <img src="images/illustration-2.svg" alt="" />
+    <section class="section">
+      <div class="section__text-block">
+        <h2 class="title">Stay productive, wherever you are</h2>
+        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+        <a href="">See how Fylo works <img src="images/icon-arrow.svg" alt="" /></a>
+        <figure>
+          <blockquote>
+            <img src="images/icon-quotes.svg" alt="" />
+            <p>
+              Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration
+              machine.
+            </p>
+          </blockquote>
+          <div>
+            <img src="images/avatar-testimonial.jpg" alt="" />
+            <figcaption><span>Kyle Burton</span> <span>Founder & CEO, Huddle</span></figcaption>
+          </div>
+        </figure>
+      </div>
+      <div class="section__illustration-img-block">
+        <img src="images/illustration-2.svg" alt="" class="section__illustration-img" />
       </div>
     </section>
-    <section>
-      <h2>Get early access today</h2>
-      <p>
-        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy
-        to help you.
-      </p>
+    <section class="section">
+      <div class="section__text-block">
+        <h2 class="title">Get early access today</h2>
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be
+          happy to help you.
+        </p>
+      </div>
       <form action="">
-        <label for="emailBottom">Email Address</label>
-        <input type="text" id="emailBottom" name="emailBottom" placeholder="email@example.com" />
-        <input type="submit" value="Get Started For Free" />
+        <label for="emailBottom" class="screen-reader">Email Address</label>
+        <input type="text" id="emailBottom" name="emailBottom" placeholder="email@example.com" class="input" />
+        <input type="submit" value="Get Started For Free" class="button" />
       </form>
     </section>
     <footer>
