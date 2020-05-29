@@ -59,11 +59,11 @@ body {
 /* Main content Sections */
 .section {
   display: flex;
-  column-gap: 30px;
   padding: 0 100px;
 }
 .section__text-block {
   flex: 1.1 1 0;
+  margin-right: 30px;
 }
 .section__illustration-img-block {
   flex: 1 1 0;
@@ -80,10 +80,10 @@ body {
 }
 .first-section__form {
   display: flex;
-  column-gap: 20px;
 }
 .first-section__form__email-input {
   width: 40%;
+  margin-right: 20px;
 }
 .first-section__form__button {
   width: 30%;
@@ -127,11 +127,11 @@ body {
 .second-section__testimonial__author {
   display: flex;
   flex-direction: row;
-  column-gap: 10px;
 }
 .second-section__testimonial__avatar {
   border-radius: 50%;
   width: 10%;
+  margin-right: 10px;
 }
 .second-section__testimonial__name-block {
   display: flex;
@@ -151,7 +151,6 @@ body {
   background: hsl(238, 22%, 44%);
   color: #ffffff;
   font-size: 16px;
-  column-gap: 100px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -160,16 +159,16 @@ body {
   font-size: 30px;
 }
 .third-section__paragraph {
-  margin-right: 100px;
+  margin-right: 125px;
 }
 .third-section__form {
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
 }
 .third-section__form__email-input {
   border: 1px solid #ffffff;
+  margin-bottom: 20px;
 }
 .third-section__form__button {
   width: 50%;
@@ -270,9 +269,6 @@ body {
     width: 100%;
   }
   /* Third Section */
-  .third-section {
-    column-gap: 50px;
-  }
   .third-section__paragraph {
     margin-right: 0px;
   }
@@ -325,13 +321,14 @@ body {
     margin-bottom: 100px;
   }
   .first-section__form {
-    row-gap: 20px;
     flex-direction: column;
   }
   .first-section__form__email-input {
     width: 90%;
     box-sizing: border-box;
     align-self: center;
+    margin-bottom: 20px;
+    margin-right: 0;
   }
   .first-section__form__button {
     width: 90%;
@@ -380,10 +377,10 @@ body {
   }
   .third-section__form {
     align-items: center;
-    row-gap: 10px;
   }
   .third-section__form__email-input {
     width: 80%;
+    margin-bottom: 10px;
   }
   .third-section__form__button {
     width: 80%;
