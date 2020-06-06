@@ -311,6 +311,9 @@ body {
     flex-direction: column-reverse;
     padding: 0 15px;
   }
+  .section__text-block {
+    margin-right: 0px;
+  }
   .section__illustration-img-block {
     margin-bottom: 50px;
   }
