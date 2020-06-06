@@ -53,6 +53,7 @@ body {
   margin-right: 100px;
 }
 .header__menu__link {
+  font-family: 'Raleway', sans-serif;
   color: hsl(243, 87%, 12%);
   text-decoration: none;
 }
